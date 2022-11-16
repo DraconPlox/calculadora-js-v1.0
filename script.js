@@ -1,33 +1,128 @@
+let calctotal;
+let select;
+let n1 = "None";
+let n2 = "None";
 function cero(){
-    document.getElementById("texto").innerHTML = "0";
+    if (n1 == "None") {
+        n1 = 0;
+        document.getElementById("texto").innerHTML = n1;
+    } else {
+        n2 = 0;
+        document.getElementById("texto").innerHTML = n2;
+    }
 }
 function uno(){
-    document.getElementById("texto").innerHTML = "1";
+    if (n1 == "None") {
+        n1 = 1;
+        document.getElementById("texto").innerHTML = n1;
+    } else {
+        n2 = 1;
+        document.getElementById("texto").innerHTML = n2;
+    }
 }
 function dos(){
-    document.getElementById("texto").innerHTML = "2";
+    if (n1 == "None") {
+        n1 = 2;
+        document.getElementById("texto").innerHTML = n1;
+    } else {
+        n2 = 2;
+        document.getElementById("texto").innerHTML = n2;
+    }
 }
 function tres(){
-    document.getElementById("texto").innerHTML = "3";
+    if (n1 == "None") {
+        n1 = 3;
+        document.getElementById("texto").innerHTML = n1;
+    } else {
+        n2 = 3;
+        document.getElementById("texto").innerHTML = n2;
+    }
 }
 function cuatro(){
-    document.getElementById("texto").innerHTML = "4";
+    if (n1 == "None") {
+        n1 = 4;
+        document.getElementById("texto").innerHTML = n1;
+    } else {
+        n2 = 4;
+        document.getElementById("texto").innerHTML = n2;
+    }
 }
 function cinco(){
-    document.getElementById("texto").innerHTML = "5";
+    if (n1 == "None") {
+        n1 = 5;
+        document.getElementById("texto").innerHTML = n1;
+    } else {
+        n2 = 5;
+        document.getElementById("texto").innerHTML = n2;
+    }
 }
 function seis(){
-    document.getElementById("texto").innerHTML = "6";
+    if (n1 == "None") {
+        n1 = 6;
+        document.getElementById("texto").innerHTML = n1;
+    } else {
+        n2 = 6;
+        document.getElementById("texto").innerHTML = n2;
+    }
 }
 function siete(){
-    document.getElementById("texto").innerHTML = "7";
+    if (n1 == "None") {
+        n1 = 7;
+        document.getElementById("texto").innerHTML = n1;
+    } else {
+        n2 = 7;
+        document.getElementById("texto").innerHTML = n2;
+    }
 }
 function ocho(){
-    document.getElementById("texto").innerHTML = "8";
+    if (n1 == "None") {
+        n1 = 8;
+        document.getElementById("texto").innerHTML = n1;
+    } else {
+        n2 = 8;
+        document.getElementById("texto").innerHTML = n2;
+    }
 }
 function nueve(){
-    document.getElementById("texto").innerHTML = "9";
+    if (n1 == "None") {
+        n1 = 9;
+        document.getElementById("texto").innerHTML = n1;
+    } else {
+        n2 = 9;
+        document.getElementById("texto").innerHTML = n2;
+    }
 }
 function borrar_todo(){
     document.getElementById("texto").innerHTML = " ";
+    n1 = "None"
+    n2 = "None"
+}
+function suma(){
+    select = "sumar";
+}
+function resta(){
+    select = "restar";
+}
+function multiplica(){
+    select = "multiplicar";
+}
+function divide(){
+    select = "dividir";
+}
+function igual(){
+    parseInt(calctotal);
+    if (select == "sumar"){
+        calctotal = n1 + n2;
+        console.log (n1 + " y " + n2)
+        document.getElementById("texto").innerHTML = calctotal;
+    } else if (select == "restar") {
+        calctotal = n1 - n2;
+        document.getElementById("texto").innerHTML = calctotal;
+    } else if (select == "multiplicar") {
+        calctotal = n1 * n2;
+        document.getElementById("texto").innerHTML = calctotal;
+    } else if (select == "dividir") {
+        calctotal = n1 / n2;
+        document.getElementById("texto").innerHTML = calctotal;
+    }
 }
