@@ -6,80 +6,83 @@
     </head>
     <body>
         <div class="calculadora">
+            <div class="panel">
+                <p id="texto"></p>
+            </div>
             <div class="botones">
                 <div class="container text-center columna">
                     <div class="row">
-                        <button class="col tecla">
-                            CE
-                        </button>
-                        <button class="col tecla">
+                        <button onclick="borrar_todo()" id="C"class="col tecla">
                             C
                         </button>
-                        <button class="col tecla">
+                        <button id="CE" class="col tecla">
+                            CE
+                        </button>
+                        <button id="DEL" class="col tecla">
                             DEL
                         </button>
-                        <button class="col tecla">
+                        <button id="/" class="col tecla">
                             /
                         </button>
                     </div>
                 </div>
                 <div class="container text-center columna">
                     <div class="row">
-                        <button class="col tecla">
+                        <button onclick="siete()" id="7" class="col tecla">
                             7
                         </button>
-                        <button class="col tecla">
+                        <button onclick="ocho()" id="8" class="col tecla">
                             8
                         </button>
-                        <button class="col tecla">
+                        <button onclick="nueve()" id="9" class="col tecla">
                             9
                         </button>
-                        <button class="col tecla">
+                        <button id="X" class="col tecla">
                             X
                         </button>
                     </div>
                 </div>
                 <div class="container text-center columna">
                     <div class="row">
-                        <button class="col tecla">
+                        <button onclick="cuatro()" id="4" class="col tecla">
                             4
                         </button>
-                        <button class="col tecla">
+                        <button onclick="cinco()" id="5" class="col tecla">
                             5
                         </button>
-                        <button class="col tecla">
+                        <button onclick="seis()" id="6" class="col tecla">
                             6
                         </button>
-                        <button class="col tecla">
+                        <button id="-" class="col tecla">
                             -
                         </button>
                     </div>
                 </div>
                 <div class="container text-center columna">
                     <div class="row">
-                        <button class="col tecla">
+                        <button onclick="uno()" id="1" class="col tecla">
                             1
                         </button>
-                        <button class="col tecla">
+                        <button onclick="dos()" id="2" class="col tecla">
                             2
                         </button>
-                        <button class="col tecla">
+                        <button onclick="tres()" id="3" class="col tecla">
                             3
                         </button>
-                        <button class="col tecla">
+                        <button id="+" class="col tecla">
                             +
                         </button>
                     </div>
                 </div>
                 <div class="container text-center columna">
                     <div class="row">
-                        <button class="col tecla">
+                        <button onclick="cero()" id="0" class="col tecla">
                             0
                         </button>
-                        <button class="col tecla">
+                        <button id="." class="col tecla">
                             .
                         </button>
-                        <button class="col tecla">
+                        <button id="=" class="col tecla">
                             =
                         </button>
                     </div>
