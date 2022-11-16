@@ -97,6 +97,21 @@ function borrar_todo(){
     n1 = "None"
     n2 = "None"
 }
+function CE(){
+    if (n2 == "None"){
+        n1 = "None";
+    } else if (n2 !== "None"){
+        n2 = "None";
+    }
+}
+function DELETE(){
+    document.getElementById("texto").innerHTML = " ";
+    if (n2 == "None"){
+        n1 = "None";
+    } else if (n2 !== "None"){
+        n2 = "None";
+    }
+}
 function suma(){
     select = "sumar";
 }
@@ -113,7 +128,6 @@ function igual(){
     parseInt(calctotal);
     if (select == "sumar"){
         calctotal = n1 + n2;
-        console.log (n1 + " y " + n2)
         document.getElementById("texto").innerHTML = calctotal;
     } else if (select == "restar") {
         calctotal = n1 - n2;
@@ -126,3 +140,5 @@ function igual(){
         document.getElementById("texto").innerHTML = calctotal;
     }
 }
+
+/* FALTA EL "." */
